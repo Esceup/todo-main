@@ -95,15 +95,19 @@ img {
 @media(max-width: 700px) {
     .linkToDad {
         top: -36px;
+        font-size: 14px;
     }
     .linkToDadShadow {
         top: -32px;
+        font-size: 14px;
     }
     .linkToMom {
         top: -36px;
+        font-size: 14px;
     }
     .linkToMomShadow {
         top: -32px; 
+        font-size: 14px;
     }
     h1 {
         padding-top: 15px;
