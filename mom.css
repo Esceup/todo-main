@@ -1,0 +1,102 @@
+body {
+    background-color: #333333;
+}
+
+.container {
+    margin-top: 5rem;
+    position: relative;
+    width: 80%;
+    background-color: #646c74;
+    padding-bottom: 15px;
+    border-radius: 3px;
+}
+
+.btn-checked,
+.btn-delete {
+    padding: 1px 5px;
+}
+
+.bg-green {
+    background-color: #d1ffcc;
+}
+
+.linkToMe {
+    color: #fff;
+    position: absolute;
+    right: 184px;
+    top: -23px;
+    text-decoration: none;
+    background-color: #646c74;
+    border-radius: 3px;
+    padding: 7px 13px;
+    border: 1px solid #212529;
+}
+
+.linkToMeShadow {
+    color: #fff;
+    position: absolute;
+    right: 180px;
+    top: -19px;
+    text-decoration: none;
+    background-color: #4b4f52;
+    border-radius: 3px;
+    padding: 7px 13px;
+    border: 1px solid #212529;
+}
+
+.linkToMom {
+    color: #fff;
+    position: absolute;
+    right: 22px;
+    top: -23px;
+    text-decoration: none;
+    background-color: #646c74;
+    /* border-top-right-radius: 5px; */
+    /* border-top-left-radius: 25px; */
+    border-radius: 3px;
+    padding: 7px 13px;
+    border: 1px solid #212529;
+}
+
+.linkToMomShadow {
+    color: #fff;
+    position: absolute;
+    right: 18px;
+    top: -19px;
+    text-decoration: none;
+    background-color: #4b4f52;
+    /* border-top-right-radius: 5px; */
+    /* border-top-left-radius: 25px; */
+    border-radius: 3px;
+    padding: 7px 13px;
+    border: 1px solid #212529;
+}
+
+.linkToDad {
+    color: #fff;
+    position: absolute;
+    right: 184px;
+    top: -23px;
+    text-decoration: none;
+    background-color: #646c74;
+    border-radius: 3px;
+    padding: 7px 13px;
+    border: 1px solid #212529;
+}
+
+.linkToDadShadow {
+    color: #fff;
+    position: absolute;
+    right: 180px;
+    top: -19px;
+    text-decoration: none;
+    background-color: #4b4f52;
+    border-radius: 3px;
+    padding: 7px 13px;
+    border: 1px solid #212529;
+}
+
+img {
+    width: 50%;
+    margin: auto;
+}
