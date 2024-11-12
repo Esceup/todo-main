@@ -23,24 +23,25 @@
     
     <div class="container">
 
-      <a class="linkToDadShadow" href="dad.html">Заметки папы</a>
+      <!-- <a class="linkToDadShadow" href="dad.html">Заметки папы</a>
     <a class="linkToDad" href="dad.html">Заметки папы</a>
       <a class="linkToMomShadow" href="mom.html">Заметки мамы</a>
-    <a class="linkToMom" href="mom.html">Заметки мамы</a>
+    <a class="linkToMom" href="mom.html">Заметки мамы</a> -->
     
-      <h1>Мои заметки</h1>
-      <input
-        type="text"
-        class="form-control mb-2"
-        placeholder="Введите название"
-        id="title"
-      />
-      <button class="btn btn-outline-info w-100 mb-2" id="create">
-        Добавить
-      </button>
-      <button class="btn btn-outline-info w-100 mb-2" id="deleteAll">
-        Удалить выполненное 
-      </button>
+      <h1>Задачи</h1>
+      <div class="d-flex mb-3">
+        <input
+          type="text"
+          class="form-control w-100 mb-2 inpAddTask"
+          placeholder="Введите задачу"
+          id="title"
+        />
+        <button class="btn btnAddTask w-25 mb-2" id="create">
+          Добавить
+        </button>
+      </div>
+      
+      
 
       <ul class="list-group list-group-flush" id="list">
         <!-- <li
@@ -53,6 +54,19 @@
           </span>
         </li> -->
       </ul>
+      <div class="d-flex mb-3 mt-2" >
+        <div id="allTask" class="allTask">0</div>
+        <div id="completedTask" class="completedTask ">0</div>
+      </div>
+       <div class="d-flex mt-2" >
+          <button class="btn btnDeleteCompletedAll mb-2" id="deleteAllCompleted">
+          Удалить выполненное 
+        </button>
+        <button class="btn btnDeleteAll  mb-2" id="deleteAll">
+          Удалить всё 
+        </button>
+       </div>
+     
     </div>
   </body>
 </html>

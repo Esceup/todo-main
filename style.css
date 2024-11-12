@@ -1,11 +1,14 @@
 body {
     background-color: #333333;
 }
+.form-control:focus{
+    box-shadow: none;
+}
 .container {
     margin-top: 5rem;
     position: relative;
     width: 80%;
-    background-color: #646c74;
+    background-color: #fff;
     padding-bottom: 15px;
     border-radius: 3px;
 }
@@ -15,6 +18,12 @@ body {
 }
 .bg-green {
     background-color: #d1ffcc;
+}
+.btnDeleteCompletedAll, .btnDeleteAll {
+    border: var(--bs-border-width) solid var(--bs-border-color);
+}
+.btnDeleteCompletedAll {
+    margin-right: auto;
 }
 .linkToMe {
     color: #fff;
@@ -91,8 +100,51 @@ img {
     width: 50%;  
     margin: auto;
 }
+h1 {
+    color: #000
+}
+.inpAddTask {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+} 
+
+
+.btnAddTask {
+    background-color: #00afee;
+    color: #fff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.btnAddTask:hover {
+    color:#fff;
+    background-color: #005cac;
+    border-color: #00afee;
+}
+.btnAddTask:focus {
+    border-color: #86b7fe;
+}
+.completedTask {
+    color: #000;
+}
+.allTask {
+    color:#000;
+    margin-right: auto;
+}
+.list-group-flush>.list-group-item:last-child {
+    border-bottom: 1px solid #000;
+}
+.list-group-flush>.list-group-item:first-child {
+    border-top: 1px solid #000;
+}
 
 @media(max-width: 700px) {
+    .btnDeleteCompletedAll, .btnDeleteAll {
+            font-size: 13px;
+        }
+        .btnAddTask {
+            font-size: 13px;
+            padding: 0 7px;
+        }
     .linkToDad {
         top: -36px;
         font-size: 14px;
