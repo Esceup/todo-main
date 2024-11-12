@@ -22,6 +22,39 @@ body {
 .btnDeleteCompletedAll, .btnDeleteAll {
     border: var(--bs-border-width) solid var(--bs-border-color);
 }
+.btnDeleteCompletedAll,
+.btnDeleteAll:active 
+
+
+.btnDeleteCompletedAll:checked+.btnDeleteCompletedAll,
+.btnDeleteCompletedAll.active,
+.btnDeleteCompletedAll.show,
+.btnDeleteCompletedAll:first-child:active,
+:not(.btnDeleteCompletedAll-check)+.btnDeleteCompletedAll:active{
+    color: #8c8c8c;
+    background-color:#fff;
+    border-color: var(--bs-btn-active-border-color); 
+}
+.btnDeleteCompletedAll:hover {
+    color: #8c8c8c;
+    background-color: #f1f1f1;
+    border-color: var(--bs-btn-active-border-color);
+}
+.btnDeleteAll:checked+.btnDeleteAll,
+.btnDeleteAll.active,
+.btnDeleteAll.show,
+.btnDeleteAll:first-child:active,
+:not(.btnDeleteAll-check)+.btnDeleteAll:active {
+    color: #8c8c8c;
+    background-color: #fff;
+    border-color: var(--bs-btn-active-border-color);
+}
+.btnDeleteAll:hover {
+    color: #8c8c8c;
+    background-color: #f1f1f1;
+    border-color: var(--bs-btn-active-border-color);
+}
+
 .btnDeleteCompletedAll {
     margin-right: auto;
 }
@@ -97,7 +130,7 @@ body {
     border: 1px solid #212529;
 }
 img {
-    width: 50%;  
+    width: 25%;  
     margin: auto;
 }
 h1 {
@@ -135,6 +168,9 @@ h1 {
 }
 .list-group-flush>.list-group-item:first-child {
     border-top: 1px solid #000;
+}
+.list-group p {
+    color:#000
 }
 
 @media(max-width: 700px) {

@@ -38,7 +38,10 @@ function render() {
 render();
 
 function sortNotesToCompleted() {
- notes.sort((a, b) => (a.completed > b.completed ? 1 : -1));
+//  notes.sort((a, b) => (a.completed > b.completed ? 1 : -1));
+notes.sort((a, b) => (b.completed < a.completed) - (a.completed < b.completed) 
+|| (b.title < a.title) - (a.title < b.title));
+
 }
 sortNotesToCompleted()
 
@@ -119,7 +122,7 @@ list.onclick = function (event) {
 
 deleteAllCompleted.onclick = function () {
     notes = notes.filter((item) => item.completed !== true);
-    sortNotesToCompleted();
+    
     saveToLocalStorage();
     render()
     countAllTask();
@@ -128,13 +131,14 @@ deleteAllCompleted.onclick = function () {
 }
 
 deleteAll.onclick = function() {
-    list.innerHTML = "";
-    sortNotesToCompleted();
+    notes.length = 0;
     saveToLocalStorage();
     render();
     countAllTask();
     countCompletedTask();
+
 }
+
     // console.log(event.target.dataset.index)
 
 // шаблон для элемента массива с data-index и data-type
